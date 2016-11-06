@@ -1,0 +1,257 @@
+--[[
+
+References:
+[1]     Source :    https://saturn.jpl.nasa.gov/the-journey/timeline/
+        Date :      2016-08-29
+        Comment :   eneral mission timeline.
+--]]
+
+return {
+    Name = "Cassini!",
+    Phases = {
+        -- All 1-level phases based on [1] 
+        {
+            Name = "Launch from Cape Canaveral",
+            TimeRange = { Start = "1997 OCT 15 00:00:00", End = "1997 OCT 16 01:00:00" }
+        },
+        { 
+            Name = "First Venus Flyby",
+            TimeRange = { Start = "1998 APR 26 00:00:00", End = "1998 APR 27 01:00:00" },
+            Phases = {
+                -- Phases from [4]
+                {
+                    Name = "Presumably stuff happened",
+                    TimeRange = { Start = "1998 APR 26 01:00:00", End = "1998 APR 26 02:00:00" }
+                }
+            }
+        },
+        {
+            Name = "Second Venus Flyby",
+            TimeRange = { Start= "1999 JUN 24 00:00:00", End= "1999 JUN 24 01:00:00" }
+        },
+        {
+            Name = "Earth-Moon Flyby",
+            TimeRange = { Start= "1999 AUG 18 00:00:00", End= "1999 AUG 18 01:00:00" }
+        },
+        {
+            Name = "Through the Asteroid Belt",
+            TimeRange = { Start= "1999 DEC 1 00:00:00", End= "2000 APR 1 01:00:00" }
+        },
+        {
+            Name = "Exploring Jupiter",
+            TimeRange = { Start= "2000 DEC 30 00:00:00", End= "2000 DEC 30 01:00:00" }
+        },
+        {
+            Name = "Camera Test",
+            TimeRange = { Start= "2002 NOV 1 00:00:00", End= "2002 NOV 1 01:00:00" }
+        },
+        {
+            Name = "Watching Saturnian Storms",
+            TimeRange = { Start= "2004 APR 8 00:00:00", End= "2004 APR 8 01:00:00" }
+        },
+        {
+            Name = "Two New Moons",
+            TimeRange = { Start= "2004 JUN 1 00:00:00", End= "2004 JUN 1 01:00:00" }
+        },
+        {
+            Name = "First Up: Phoebe",
+            TimeRange = { Start= "2004 JUN 11 00:00:00", End= "2004 JUN 11 01:00:00" }
+        },
+        {
+            Name = "Saturn Orbit Insertion",
+            TimeRange = { Start= "2004 JUL 1 00:00:00", End= "2004 JUL 1 01:00:00" }
+        },
+        {
+            Name = "First Close Encounter with Titan",
+            TimeRange = { Start= "2004 OCT 25 00:00:00", End= "2004 OCT 25 01:00:00" }
+        },
+        {
+            Name = "Huygens Probe Detaches",
+            TimeRange = { Start= "2004 DEC 24 00:00:00", End= "2004 DEC 24 01:00:00" }
+        },
+        {
+            Name = "Iapetus’ Interesting Ridge",
+            TimeRange = { Start= "2004 DEC 31 00:00:00", End= "2004 DEC 31 01:00:00" }
+        },
+        {
+            Name = "Descent to Titan",
+            TimeRange = { Start= "2005 JAN 14 00:00:00", End= "2005 JAN 14 01:00:00" }
+        },
+        {
+            Name = "Revealing Titan",
+            TimeRange = { Start= "2005 JAN 15 00:00:00", End= "2005 JAN 15 01:00:00" }
+        },
+        {
+            Name = "There's Something Strange about Enceladus",
+            TimeRange = { Start= "2005 FEB 17 00:00:00", End= "2005 FEB 17 01:00:00" }
+        },
+        {
+            Name = "A Big Surprise at a Small Moon",
+            TimeRange = { Start= "2005 JUL 14 00:00:00", End= "2005 JUL 14 01:00:00" }
+        },
+        {
+            Name = "Liquid Water on Enceladus",
+            TimeRange = { Start= "2006 MAR 9 00:00:00", End= "2006 MAR 9 01:00:00" }
+        },
+        {
+            Name = "Finding Lakes on Titan",
+            TimeRange = { Start= "2006 JUL 22 00:00:00", End= "2006 JUL 22 01:00:00" }
+        },
+        {
+            Name = "Seeing New Rings",
+            TimeRange = { Start= "2006 SEP 15 00:00:00", End= "2006 SEP 15 01:00:00" }
+        },
+        {
+            Name = "Iapetus Up Close",
+            TimeRange = { Start= "2007 SEP 10 00:00:00", End= "2007 SEP 10 01:00:00" }
+        },
+        {
+            Name = "Enceladus Tiger Stripes",
+            TimeRange = { Start= "2007 OCT 10 00:00:00", End= "2007 OCT 10 01:00:00" }
+        },
+        {
+            Name = "Enceladus: An Organic Brew",
+            TimeRange = { Start= "2008 MAR 13 00:00:00", End= "2008 MAR 13 01:00:00" }
+        },
+        {
+            Name = "Primary Mission Completed",
+            TimeRange = { Start= "2008 JUN 1 00:00:00", End= "2008 JUN 1 01:00:00" }
+        },
+        {
+            Name = "Pinpointing the Source",
+            TimeRange = { Start= "2008 AUG 14 00:00:00", End= "2008 AUG 14 01:00:00" }
+        },
+        {
+            Name = "Closest Pass Over Enceladus",
+            TimeRange = { Start= "2008 OCT 9 00:00:00", End= "2008 OCT 9 01:00:00" }
+        },
+        {
+            Name = "An Active World",
+            TimeRange = { Start= "2008 DEC 15 00:00:00", End= "2008 DEC 15 01:00:00" }
+        },
+        {
+            Name = "New Moon",
+            TimeRange = { Start= "2009 MAR 3 00:00:00", End= "2009 MAR 3 01:00:00" }
+        },
+        {
+            Name = "Salty Evidence for Hidden Water",
+            TimeRange = { Start= "2009 JUN 24 00:00:00", End= "2009 JUN 24 01:00:00" }
+        },
+        {
+            Name = "Ammonia Adds to the Evidence",
+            TimeRange = { Start= "2009 JUL 22 00:00:00", End= "2009 JUL 22 01:00:00" }
+        },
+        {
+            Name = "Equinox!",
+            TimeRange = { Start= "2009 AUG 11 00:00:00", End= "2009 AUG 11 01:00:00" }
+        },
+        {
+            Name = "Scientists Discover 'the Dione Belt'",
+            TimeRange = { Start= "2009 SEP 14 00:00:00", End= "2009 SEP 14 01:00:00" }
+        },
+        {
+            Name = "Mission Extension to 2017",
+            TimeRange = { Start= "2010 FEB 3 00:00:00", End= "2010 FEB 3 01:00:00" }
+        },
+        {
+            Name = "Mimas Up Close",
+            TimeRange = { Start= "2010 FEB 13 00:00:00", End= "2010 FEB 13 01:00:00" }
+        },
+        {
+            Name = "Titan Up Close",
+            TimeRange = { Start= "2010 JUN 21 00:00:00", End= "2010 JUN 21 01:00:00" }
+        },
+        {
+            Name = "Solstice Mission Begins",
+            TimeRange = { Start= "2010 SEP 27 00:00:00", End= "2010 SEP 27 01:00:00" }
+        },
+        {
+            Name = "Rhea’s Exosphere",
+            TimeRange = { Start= "2010 NOV 29 00:00:00", End= "2010 NOV 29 01:00:00" }
+        },
+        {
+            Name = "Monster Storm",
+            TimeRange = { Start= "2010 DEC 5 00:00:00", End= "2010 DEC 5 01:00:00" }
+        },
+        {
+            Name = "Enceladus’ Hidden Ocean",
+            TimeRange = { Start= "2011 JUN 22 00:00:00", End= "2011 JUN 22 01:00:00" }
+        },
+        {
+            Name = "Moon Portrait",
+            TimeRange = { Start= "2011 SEP 16 00:00:00", End= "2011 SEP 16 01:00:00" }
+        },
+        {
+            Name = "Hint of Fresh Air at Dione",
+            TimeRange = { Start= "2012 MAR 2 00:00:00", End= "2012 MAR 2 01:00:00" }
+        },
+        {
+            Name = "Objects Blazing Trails in Saturn Ring",
+            TimeRange = { Start= "2012 APR 23 00:00:00", End= "2012 APR 23 01:00:00" }
+        },
+        {
+            Name = "More Rings, Please",
+            TimeRange = { Start= "2012 JUL 9 00:00:00", End= "2012 JUL 9 01:00:00" }
+        },
+        {
+            Name = "Storm Chokes on Its Own Tail",
+            TimeRange = { Start= "2013 JAN 31 00:00:00", End= "2013 JAN 31 01:00:00" }
+        },
+        {
+            Name = "Wave at Saturn",
+            TimeRange = { Start= "2013 JUL 19 00:00:00", End= "2013 JUL 19 01:00:00" }
+        },
+        {
+            Name = "“Scientist for a Day” Results",
+            TimeRange = { Start= "2013 OCT 25 00:00:00", End= "2013 OCT 25 01:00:00" }
+        },
+        {
+            Name = "Saturn Hexagon",
+            TimeRange = { Start= "2013 DEC 4 00:00:00", End= "2013 DEC 4 01:00:00" }
+        },
+        {
+            Name = "100th Titan Flyby",
+            TimeRange = { Start= "2014 MAR 6 00:00:00", End= "2014 MAR 6 01:00:00" }
+        },
+        {
+            Name = "101 Geysers on Enceladus",
+            TimeRange = { Start= "2014 JUL 28 00:00:00", End= "2014 JUL 28 01:00:00" }
+        },
+        {
+            Name = "Titan All Alone in the Solar Wind",
+            TimeRange = { Start= "2015 JAN 28 00:00:00", End= "2015 JAN 28 01:00:00" }
+        },
+        {
+            Name = "Last Look at Hyperion",
+            TimeRange = { Start= "2015 May 31 00:00:00", End= "2015 May 31 01:00:00" }
+        },
+        {
+            Name = "Last Flyby of Dione",
+            TimeRange = { Start= "2015 AUG 17 00:00:00", End= "2015 AUG 17 01:00:00" }
+        },
+        {
+            Name = "Goodbye, Enceladus",
+            TimeRange = { Start= "2015 DEC 19 00:00:00", End= "2015 DEC 19 01:00:00" }
+        },
+        {
+            Name = "Titan's Tallest Peaks",
+            TimeRange = { Start= "2016 MAR 24 00:00:00", End= "2016 MAR 24 01:00:00" }
+        },
+        {
+            Name = "Returning to the Realm of Icy Moons",
+            TimeRange = { Start= "2016 MAR 30 00:00:00", End= "2016 MAR 30 01:00:00" }
+        },
+        {
+            Name = "F Ring Orbits",
+            TimeRange = { Start= "2016 NOV 30 00:00:00", End= "2016 NOV 30 01:00:00" }
+        },
+        {
+            Name = "Orbits Inside Saturn's Innermost Ring",
+            TimeRange = { Start= "2017 APR 22 00:00:00", End= "2017 APR 22 01:00:00" }
+        },
+        {
+            Name = "The Grand Finale",
+            TimeRange = { Start= "2017 SEP 15 00:00:00", End= "2017 SEP 15 01:00:00" }
+        }
+    }
+}

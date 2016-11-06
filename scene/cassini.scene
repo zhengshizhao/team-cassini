@@ -1,0 +1,84 @@
+function preInitialization()
+    --[[
+    The scripts in this function are executed after the scene is loaded but before the
+    scene elements have been initialized, thus they should be used to set the time at
+    which the scene should start and other settings that might determine initialization
+    critical objects.
+    ]]--
+
+    openspace.spice.loadKernel("${SPICE}/naif0011.tls")
+    openspace.spice.loadKernel("${SPICE}/pck00010.tpc")
+
+    dofile(openspace.absPath('${SCRIPTS}/bind_keys.lua'))
+    dofile(openspace.absPath('${SCRIPTS}/bind_keys_cassini.lua'))
+    -- Usual start
+    openspace.time.setTime("2014-12-01T03:05:18.101")
+
+    -- Philae release
+    -- openspace.time.setTime("2014-11-12T08:00:00.000")
+
+    -- Shadow flyby
+    -- openspace.time.setTime("2015-02-14T12:00:00.000")
+
+
+    -- openspace.time.setTime("2015-07-29T06:02:10.000")
+    -- openspace.time.setTime("2014 AUG 21 18:00:00")
+    -- openspace.time.setTime("2015 SEP 10 19:39:00")
+    dofile(openspace.absPath('${SCRIPTS}/bind_keys_rosetta.lua'))
+end
+
+function postInitialization()
+    --[[
+    The scripts in this function are executed after all objects in the scene have been
+    created and initialized, but before the first render call. This is the place to set
+    graphical settings for the renderables.
+    ]]--
+    openspace.printInfo("Setting default values")
+    openspace.setPropertyValue("Sun.renderable.enabled", false)
+    openspace.setPropertyValue("SunMarker.renderable.enabled", true)
+    openspace.setPropertyValue("EarthMarker.renderable.enabled", true)
+
+    openspace.setPropertyValue("MilkyWay.renderable.transparency", 0.55)
+    openspace.setPropertyValue("MilkyWay.renderable.segments", 50)
+
+    openspace.setPropertyValue('67P.renderable.performShading', false);
+
+    openspace.printInfo("Done setting default values")
+    openspace.loadMission("${OPENSPACE_DATA}/scene/cassini/cassini.mission")
+
+    openspace.time.setTime(startTime)
+    openspace.time.setDeltaTime(0)
+
+    openspace.resetCameraDirection()
+end
+
+return {
+    ScenePath = ".",
+    CommonFolder = "common",
+    Camera = {
+        Focus = "Cassini",
+        Position = {26974590199.661884, 76314608558.908020, -127086452897.101791},
+        Rotation = {0.729548, -0.126024, 0.416827, 0.527382},
+    },
+    Modules = {
+        "sun",
+        "mercury",
+        -- "lodmercury"
+        "venus",
+        "earth",
+        "mars",
+        -- "lodearth"
+        -- "lodmoon"
+        -- "lodmars"
+        "jupiter",
+        "saturn",
+        -- "uranus",
+        -- "neptune"
+        "stars",
+        -- "stars-denver"
+        "milkyway",
+        -- "milkyway-eso"
+        --"imageplane"
+        "cassini",
+    }
+}
